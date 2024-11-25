@@ -1,0 +1,135 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: var(--hero-bg-color);
+}
+
+.hero-slider {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-item {
+    background: var(--secondary-color);
+    color: white;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.slider-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.slider-item p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.slider-item .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.slider-item .btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 0;
+    background-color: var(--about-bg-color);
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 40px;
+}
+
+.about-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 16px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--hero-bg-color);
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.services .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services .btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--about-bg-color);
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.testimonial-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-slider {
+        flex-direction: column;
+    }
+
+    .about-boxes {
+        flex-direction: column;
+    }
+
+    .testimonial-slider {
+        flex-direction: column;
+    }
+}

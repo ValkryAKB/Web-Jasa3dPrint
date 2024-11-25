@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printing Service</title>
+    <link rel="stylesheet" href="../css/style.global.css">
+    <link rel="stylesheet" href="../css/style.home.css">
+    <link rel="stylesheet" href="../css/style.colors.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <img src="path_to_your_logo.png" alt="Logo Toko" class="logo">
+            </div>
+    
+            <div class="header-center">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+                        <li><a href="#services" class="nav-link">Layanan</a></li>
+                        <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="header-right">
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank">
+                    <img src="path_to_whatsapp_icon.png" alt="WhatsApp">
+                </a>
+                <a href="https://tokopedia.com/yourshop" target="_blank">
+                    <img src="path_to_tokopedia_icon.png" alt="Tokopedia">
+                </a>
+                <a href="https://shopee.co.id/yourshop" target="_blank">
+                    <img src="path_to_shopee_icon.png" alt="Shopee">
+                </a>
+            </div>
+    
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-slider">
+                <div class="slider-item">
+                    <h3>Pesan Sekarang</h3>
+                    <p>Mulai proyek Anda sekarang dengan kualitas cetakan 3D terbaik!</p>
+                    <a href="services.html" class="btn">Pesan Sekarang</a>
+                </div>
+                <div class="slider-item">
+                    <h3>Apa itu 3D Printer?</h3>
+                    <p>Cetak objek dengan teknologi terbaru, efisien dan presisi.</p>
+                    <a href="3dprint-info.html" class="btn">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="slider-item">
+                    <h3>Jenis Filament</h3>
+                    <p>Pilih bahan yang tepat untuk proyek Anda: PLA, TPU, PETG.</p>
+                    <a href="filament-info.html" class="btn">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami menawarkan layanan 3D printing berkualitas dengan berbagai pilihan filament yang dapat disesuaikan dengan kebutuhan Anda. Gunakan Bambu Lab A1 Mini untuk hasil terbaik.</p>
+            <div class="about-boxes">
+                <div class="about-box">
+                    <img src="wa-icon.png" alt="WhatsApp">
+                    <p>WhatsApp</p>
+                </div>
+                <div class="about-box">
+                    <img src="tokopedia-icon.png" alt="Tokopedia">
+                    <p>Tokopedia</p>
+                </div>
+                <div class="about-box">
+                    <img src="shopee-icon.png" alt="Shopee">
+                    <p>Shopee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <p>Pilih paket layanan 3D Printing yang sesuai dengan kebutuhan Anda.</p>
+            <a href="services.html" class="btn">Lihat Layanan Kami</a>
+        </div>
+    </section>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <img src="client1.jpg" alt="Client 1">
+            </div>
+            <div class="testimonial-item">
+                <img src="client2.jpg" alt="Client 2">
+            </div>
+            <div class="testimonial-item">
+                <img src="client3.jpg" alt="Client 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Alamat: Jl. Teknologi No. 123, Bandung, Indonesia</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="https://wa.me/123456789"><img src="images/wa-icon.png" alt="WhatsApp"></a>
+                <a href="https://tokopedia.com"><img src="images/tokopedia-icon.png" alt="Tokopedia"></a>
+                <a href="https://shopee.co.id"><img src="images/shopee-icon.png" alt="Shopee"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 3D Printing Service. All rights reserved.</p>
+        </div>
+    </footer>    
+
+    <script>
+        // Memastikan menu navigasi dapat menavigasi ke section yang tepat
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

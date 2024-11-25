@@ -1,0 +1,48 @@
+/* Halaman Layanan */
+section.services {
+    padding: 50px 0;
+    background-color: #f0f4f8;
+}
+
+section.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #005f73;
+}
+
+section.services .packages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section.services .package {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section.services .package h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+section.services .package .btn {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 768px) {
+    section.services .packages {
+        flex-direction: column;
+    }
+}

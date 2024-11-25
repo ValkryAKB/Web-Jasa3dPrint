@@ -1,0 +1,29 @@
+/* Variabel Warna */
+:root {
+    --bg-color: #f0f4f8; /* Soft Light Background Color */
+    --text-color: #333333; /* Dark Text Color */
+    
+    /* Header */
+    --header-bg-color: linear-gradient(90deg, #0062cc, #00b0ff); /* Blue Gradient */
+    --link-color: #ffffff; /* White Links */
+    --link-hover-color: #ff6600; /* Orange Hover */
+    --social-icon-color: #ffffff; /* White Social Icons */
+    
+    /* Hero Section */
+    --hero-bg-color: linear-gradient(45deg, #0062cc, #004aad); /* Hero Background Blue Gradient */
+    --slider-bg-color: #ffffff; /* Slider Item Background Color */
+    --slider-text-color: #004aad; /* Darker Blue Text Color */
+    
+    /* Buttons */
+    --btn-bg-color: #007bff; /* Primary Button Blue */
+    --btn-text-color: #ffffff; /* White Text for Buttons */
+    --btn-hover-bg-color: #0056b3; /* Button Hover Darker Blue */
+    
+    /* About Us Section */
+    --about-bg-color: #e7eff6; /* Light Blue Background */
+    
+    /* Footer */
+    --footer-bg-color: #003366; /* Dark Blue Footer */
+    --footer-text-color: #ffffff; /* White Footer Text */
+    --footer-social-icon-color: #ffffff; /* White Footer Social Icons */
+}

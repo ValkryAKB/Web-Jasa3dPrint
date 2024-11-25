@@ -1,0 +1,288 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: var(--header-bg-color); /* Gradien Biru pada Header */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Menambahkan style ketika header discroll */
+header.scrolled {
+    background-color: #333; /* Ganti dengan warna yang diinginkan */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Container untuk header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo pada bagian kiri */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+/* Menu navigasi di tengah */
+.header-center nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/* Styling untuk link navigasi */
+.header-center nav ul li {
+    margin-right: 20px;
+}
+
+.header-center nav ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover pada link menu */
+.header-center nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Ikon sosial di kanan */
+.header-right {
+    display: flex;
+    gap: 15px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: var(--social-icon-color);
+    font-size: 18px;
+}
+
+/* Hamburger menu untuk tampilan mobile */
+#hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Mengatur tampilan menu untuk mobile */
+@media screen and (max-width: 768px) {
+    .header-center nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-center nav ul.active {
+        display: flex;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    .header-center nav ul li {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .header-center nav ul li a {
+        font-size: 16px;
+    }
+
+    .header-right {
+        display: none;
+    }
+}
+
+/* Hover pada link navigasi */
+.header-center nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+    padding: 80px 0;
+    background: var(--hero-bg-color); /* Gradien Biru pada Hero */
+    color: white;
+    text-align: center;
+}
+
+.hero-slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-slider .slider-item {
+    width: 32%;
+    background-color: var(--slider-bg-color);
+    color: var(--slider-text-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero-slider .slider-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero-slider .slider-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-slider .slider-item .btn {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-slider .slider-item .btn:hover {
+    background-color: var(--btn-hover-bg-color);
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--about-bg-color);
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+}
+
+.about-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-box {
+    text-align: center;
+}
+
+.about-box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left p {
+    font-size: 16px;
+    color: white;
+}
+
+.map iframe {
+    margin-top: 10px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right a {
+    margin-left: 20px;
+}
+
+.footer-bottom {
+    background-color: var(--footer-bg-color);
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-center nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-slider {
+        flex-direction: column;
+    }
+
+    .hero-slider .slider-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
